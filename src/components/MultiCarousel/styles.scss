@@ -1,0 +1,69 @@
+@import "src/styles/variables";
+
+.b-multicarousel {
+  padding-top: 40px;
+
+  &_wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__carousel {
+    position: relative;
+    height: 163px;
+    width: calc(175px * 5 + 3 * 8px);
+    overflow: hidden;
+
+    &__items {
+      height: 163px;
+      position: absolute;
+      top: 0;
+      display: flex;
+      flex-direction: row;
+      transition: left 500ms;
+      column-gap: 8px;
+
+      &__item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: grey;
+        width: 175px;
+        height: 163px;
+
+        &__img {
+          width: 175px;
+          height: 163px;
+          border: 1px solid $input-border;
+        }
+      }
+    }
+  }
+
+  &__arrows {
+    position: absolute;
+    width: 100%;
+
+    &__left {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 16px;
+      height: 164px;
+      cursor: pointer;
+      background: url("/assets/images/left-multicarousel.png") no-repeat;
+    }
+
+    &__right {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 15px;
+      height: 164px;
+      cursor: pointer;
+      background: url("/assets/images/right-multicarousel.png") no-repeat;
+    }
+  }
+}

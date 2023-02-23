@@ -1,0 +1,30 @@
+@import "src/styles/variables";
+
+.b-home {
+  &__info {
+    margin-top: 45px;
+
+    &__title {
+      font-size: 26px;
+      line-height: 26px;
+      text-transform: uppercase;
+      color: $blue;
+      margin-bottom: 25px;
+    }
+
+    &__desc {
+      font-size: 14px;
+      color: $text-light;
+      font-weight: lighter;
+      line-height: 20px;
+    }
+
+  }
+
+  &__banner {
+    display: flex;
+    flex-direction: row;
+    padding: 40px 0;
+    justify-content: space-between;
+  }
+}

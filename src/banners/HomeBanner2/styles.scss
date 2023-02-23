@@ -1,0 +1,39 @@
+@import "src/styles/variables";
+
+.b-home-banner2 {
+  position: relative;
+  background: url("/assets/images/home-banner-2.png") no-repeat;
+  width: 475px;
+  height: 122px;
+
+  &__info {
+    position: absolute;
+    color: $highlight;
+    font-size: 16px;
+    top: 30px;
+    right: 40px;
+
+    &__title {
+      color: $blue;
+      font-size: 26px;
+      line-height: 26px;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    &__desc {
+      font-size: 14px;
+      line-height: 14px;
+      color: $highlight;
+      text-transform: uppercase;
+    }
+
+    &__action {
+      font-size: 16px;
+      margin-top: 6px;
+      line-height: 16px;
+      color: $red;
+      cursor: pointer;
+    }
+  }
+}

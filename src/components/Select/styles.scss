@@ -1,0 +1,16 @@
+@import "src/styles/variables";
+
+.b-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: $select-border;
+  background-image: url("/assets/images/select-arrow.png");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 0px;
+  border: 1px solid $select-border;
+  border-radius: 0;
+  padding-right: 25px;
+  height: 19px;
+  padding-left: 10px;
+}
